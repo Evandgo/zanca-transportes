@@ -1,0 +1,119 @@
+/* Reset de margens e paddings */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos do body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos do container principal */
+.container {
+    position: relative; /* Permite que a imagem de fundo seja posicionada dentro dele */
+    background-color: white;
+    width: 90%; /* Ocupa 90% da largura da tela */
+    max-width: 409px; /* Limita a largura máxima */
+    height: 800px; /* Altura ajustável */
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse o container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efeito visual */
+}
+
+/* Estilos da imagem de fundo */
+.background-image {
+    position: absolute; /* Posiciona a imagem de fundo */
+    top: 225px;
+    left: 0px;
+    width: 105%;
+    height: 105%;
+    object-fit: cover; /* Ajusta a imagem para cobrir o container */
+    z-index: 1; /* Coloca a imagem atrás dos outros elementos */
+}
+
+.titulo {
+    position: relative; /* Garante que o título fique acima da imagem de fundo */
+    z-index: 2; /* Coloca o título na frente da imagem */
+    color: white;
+    background: linear-gradient(to bottom, #213155, rgba(52, 73, 131, 0.596));
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center; 
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Estilos da parte superior com fundo vermelho */
+.top-section {
+    position: relative; /* Garante que a seção superior fique acima da imagem de fundo */
+    z-index: 2; /* Coloca a seção superior na frente da imagem */
+    background-color: #c32c17; /* Fundo vermelho */
+    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: white;
+}
+
+/* Estilos do logotipo */
+.logo {
+    width: 220px; /* Largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Faz a imagem se comportar como um bloco */
+    margin: 0 auto 20px; /* Centraliza a imagem e adiciona espaçamento abaixo */
+}
+
+/* Estilos do conteúdo com fundo branco */
+.content {
+    position: relative; /* Garante que o conteúdo fique acima da imagem de fundo */
+    z-index: 2; /* Coloca o conteúdo na frente da imagem */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semi-transparente */
+
+}
+
+/* Estilos dos containers filhos (itens) */
+.item {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    margin-top: 30px;
+    margin-bottom: 20px; /* Espaçamento entre os itens */
+    padding: 13px 30px; /* Padding interno */
+    color: white;
+    background-color: #212a4b; /* Fundo vermelho */
+    border-radius: 30px; /* Bordas arredondadas */
+}
+
+/* Estilos das imagens dentro dos itens */
+.item img {
+    width: 40px; /* Largura da imagem */
+    height: 40px; /* Altura da imagem */
+    margin-right: 30px; /* Espaçamento entre a imagem e o texto */
+    border-radius: 5px; /* Bordas arredondadas na imagem */
+}
+
+/* Estilos dos links dentro dos itens */
+.item a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+/* Efeito de hover nos links */
+.item a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.barrafinal {
+    position: relative; /* Garante que a barra final fique acima da imagem de fundo */
+    z-index: 2; /* Coloca a barra final na frente da imagem */
+    background: linear-gradient(to right, #212a4b, #c32c17);
+    padding-top: 50px;    
+}

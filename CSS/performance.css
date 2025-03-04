@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 490px;
+    width: 100%;
+    margin: 20px;
+}
+    
+
+
+h1 {
+    text-align: center;
+    background-color: #213155;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Estilos para o botão de voltar ao menu */
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 160px;
+    background-color: #c32c17; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 4px; /* Bordas arredondadas */
+    font-weight: bold; /* Texto em negrito */
+    margin-bottom: 20px; /* Espaçamento abaixo do botão */
+    text-align: center;
+    transition: background-color 0.3s ease; /* Transição suave de cor */
+}
+
+.back-button:hover {
+    background-color: #213155; /* Cor de fundo ao passar o mouse */
+}
+
+#performance-container {
+    display: flex;
+    flex-direction: column; /* Itens em cascata (um abaixo do outro) */
+    gap: 20px;
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #f3f3f3, rgba(243, 243, 243, 0.596));
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.progress-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(var(--color) 0%, var(--color) var(--progress), #444 var(--progress), #444 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* Efeito de anel (centro vazado) */
+.progress-circle::before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #333842; /* Cor de fundo do centro */
+}
+
+.progress-circle span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 1; /* Garante que o texto fique acima do centro vazado */
+}
+
+.progress-container p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #213155;
+    text-align: center;
+}

@@ -1,0 +1,84 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color:  #f3f3f3; /* Cor de fundo da página */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #ffffff; /* Cor do texto principal */
+}
+
+
+/* Estilos para o botão de menu */
+.menu-button {
+    display: block; /* Altera para bloco */
+    padding: 10px 20px;
+    background-color: #c32c17;
+    color: white; /* Cor do texto do botão */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 4px; /* Bordas arredondadas */
+    font-weight: bold; /* Texto em negrito */
+    margin: 0 auto 20px; /* Centraliza horizontalmente e adiciona espaçamento abaixo */
+    text-align: center;
+    transition: background-color 0.3s ease; /* Transição suave de cor */
+    width: fit-content; /* Ajusta a largura ao conteúdo */
+}
+
+.menu-button:hover {
+    background-color: #213155; /* Cor de fundo ao passar o mouse */
+}
+
+/* Container principal */
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+    margin: 20px;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    background-color: #213155;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+/* Estilos para a tabela */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-left: 5px;
+    margin-top: 5px;
+    background-color: #f3f3f3;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #1d212c; /* Cor da borda da tabela */
+}
+
+th {
+    background-color: #213155;
+    font-weight: bold;
+    color: white; /* Cor do texto do cabeçalho */
+}
+
+tr:hover {
+    background-color: #a9b3ca; /* Cor de fundo ao passar o mouse */
+}
+
+td {
+    color: #213155; /* Cor do texto das células */
+}

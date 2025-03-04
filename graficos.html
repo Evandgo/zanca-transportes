@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App - Google Sheets</title>
+    <link rel="stylesheet" href="css/graficos.css">
+    <!-- Adicionando a biblioteca Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Botão para navegar para menu.html -->
+        <a href="index.html" class="menu-button">Voltar ao Menu</a>
+        
+        <h1>Motoristas</h1>
+        <BR><BR>
+        
+        <!-- Canvas para o gráfico de colunas -->
+        <canvas id="myChart" width="400" height="200"></canvas>
+        <BR><BR>
+        <!-- Tabela para exibir os dados -->
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <!-- Cabeçalho será preenchido dinamicamente via JavaScript -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dados serão preenchidos dinamicamente via JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
